@@ -68,11 +68,6 @@ public static class PasswordHelper
             }
         }
 
-        if (totalRepeated >= passwordConfig.MinSymbolRepeat & totalRepeated <= passwordConfig.MaxSymbolRepeat)
-        {
-            return true;
-        }
-
-        return false;
+        return totalRepeated >= passwordConfig.MinSymbolRepeat & totalRepeated <= passwordConfig.MaxSymbolRepeat;
     }
 }
